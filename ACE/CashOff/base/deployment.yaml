@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   namespace: tekton-builds
-  name: ace-deployment
+  name: cashoff-deployment
   labels:
-    app: ace
+    app: cashoff
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: ace
+      app: cashoff
   template:
     metadata:
       labels:
-        app: ace
+        app: cashoff
     spec:
       containers:
-      - name: ace
+      - name: cashoff
         image: mfarhan1998/ace-test:test
         imagePullPolicy: Always
         ports:
