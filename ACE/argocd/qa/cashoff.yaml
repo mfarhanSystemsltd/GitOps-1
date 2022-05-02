@@ -6,13 +6,13 @@ metadata:
     - resources-finalizer.argocd.argoproj.io
 spec:
   destination:
-    namespace: openshift-gitops
+    namespace: tekton-builds ## incase of openshift change this to int
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: /ACE/CashOff/overlays/qa/
+    path: ACE/CashOff/overlays/qa/
     repoURL: https://github.com/arslaanmalikSystemsltd/GitOps.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true

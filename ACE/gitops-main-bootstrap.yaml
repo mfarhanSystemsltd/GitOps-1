@@ -10,9 +10,9 @@ spec:
     server: https://kubernetes.default.svc
   project: default ## argo cd project
   source:
-    path: /ACE/argocd/dev/  ## path where it reads other argo manifists
+    path: ACE/argocd/dev/  ## path where it reads other argo manifists
     repoURL: https://github.com/arslaanmalikSystemsltd/GitOps.git
-    targetRevision: master
+    targetRevision: main
   syncPolicy:
     automated:
       prune: true  ## ye kya karta ha
