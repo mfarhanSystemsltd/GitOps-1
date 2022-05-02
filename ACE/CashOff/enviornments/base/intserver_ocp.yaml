@@ -1,5 +1,7 @@
-apiVersion: appconnect.ibm.com/v1beta1
-kind: IntegrationServer
+# apiVersion: appconnect.ibm.com/v1beta1
+# kind: IntegrationServer
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: devops-cicd-auto
   namespace: int
