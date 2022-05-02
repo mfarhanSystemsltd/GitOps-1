@@ -1,6 +1,6 @@
 bases:
   - ../../base
 patches:
-- deployment-k.yaml
+  - deployment-k.yaml
 # resources:
 # - intserver_ocp.yaml
