@@ -1,12 +1,14 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  # namespace: tekton-builds
+  namespace: tekton-builds
   name: ace-deployment
+  labels:
+    app: ace
 spec:
   replicas: 1
-  template:
-    spec:
-      containers:
-      - name: ace
-        image: mfarhan1998/ace-test:kustomize
+  # template:
+  #   spec:
+  #     containers:
+  #     - name: ace
+  #       image: mfarhan1998/ace-test:kustomize
