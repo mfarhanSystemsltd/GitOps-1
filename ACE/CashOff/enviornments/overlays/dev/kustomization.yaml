@@ -3,7 +3,7 @@ kind: Kustomization
 
 bases:
 - ../../base
-patchesStrategicMerge:
-- deployment.yaml
+patches:
+- deployment-k.yaml
 # resources:
 # - intserver_ocp.yaml
