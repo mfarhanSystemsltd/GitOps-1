@@ -1,5 +1,5 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: appconnect.ibm.com/v1beta1
+kind: IntegrationServer
 metadata:
   name: devops-cicd-auto-kustomize
 spec:
