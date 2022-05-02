@@ -7,8 +7,8 @@ metadata:
     app: ace
 spec:
   replicas: 1
-  # template:
-  #   spec:
-  #     containers:
-  #     - name: ace
-  #       image: mfarhan1998/ace-test:kustomize
+  template:
+    spec:
+      containers:
+      - name: ace
+        image: mfarhan1998/ace-test:kustomize
