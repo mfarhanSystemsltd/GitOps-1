@@ -10,7 +10,7 @@ spec:
     server: https://kubernetes.default.svc
   project: default
   source:
-    path: /ACE/CashOff/enviornments/overlays/dev/
+    path: /ACE/CashOff/overlays/dev/
     repoURL: https://github.com/arslaanmalikSystemsltd/GitOps.git
     targetRevision: master
   syncPolicy:
