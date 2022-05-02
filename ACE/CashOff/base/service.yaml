@@ -3,10 +3,10 @@ apiVersion: v1
 kind: Service
 metadata:
   namespace: tekton-builds
-  name: ace-service
+  name: cashoff-service
 spec:
   selector:
-    app: ace
+    app: cashoff
   ports:
     - name: http
       protocol: TCP
