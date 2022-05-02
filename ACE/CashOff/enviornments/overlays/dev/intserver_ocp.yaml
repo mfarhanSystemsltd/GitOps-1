@@ -1,15 +1,8 @@
-apiVersion: appconnect.ibm.com/v1beta1
-kind: IntegrationServer
+apiVersion: apps/v1
+kind: Deployment
 metadata:
   name: devops-cicd-auto-kustomize
-  namespace: devops-cicd
 spec:
-  pod:
-    containers:
-      runtime:
-        resources:
-        image: >-        
-          407690150649.dkr.ecr.us-east-1.amazonaws.com/openshift-cicd:kustomize
   replicas: 2
   configurations:
     - sb-rest2mq-api-server-conf1-kustomize
