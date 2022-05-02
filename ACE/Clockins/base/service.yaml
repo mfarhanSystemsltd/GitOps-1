@@ -10,7 +10,7 @@ spec:
   ports:
     - name: http
       protocol: TCP
-      port: 3002
+      port: 3004
       targetPort: 7600
       nodePort: 30004
 #  externalIPs:
