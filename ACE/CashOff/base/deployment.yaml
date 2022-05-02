@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
       - name: cashoff
-        image: mfarhan1998/ace-test:test
+        image: mfarhan1998/ace-test:tag
         imagePullPolicy: Always
         ports:
         - containerPort: 7600
