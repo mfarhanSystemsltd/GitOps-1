@@ -4,6 +4,8 @@ metadata:
   name: aptos-cashoff
   finalizers:
     - resources-finalizer.argocd.argoproj.io
+  annotations:
+    notifications.argoproj.io/subscribe.on-sync-succeeded.mailtrap: hello@gmail.com
 spec:
   destination:
     namespace: openshift-gitops
@@ -11,7 +13,7 @@ spec:
   project: default
   source:
     path: /ACE/CashOff/overlays/dev/
-    repoURL: https://github.com/arslaanmalikSystemsltd/GitOps.git
+    repoURL: https://github.com/mfarhanSystemsltd/GitOps-1.git
     targetRevision: master
   syncPolicy:
     automated:
